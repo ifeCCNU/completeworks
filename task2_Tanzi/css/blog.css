@@ -1,0 +1,247 @@
+nav{  /* */
+    background-color: rgba(0,0,0,0.3);
+    height:50px;
+    position: fixed;
+}
+#banner{
+    height:700px;
+}
+header{
+    background: rgba(0,0,0,0.4);
+    color:#ffffff;
+}
+nav ul li ,nav .logo{
+   display: inline-block; /*使nav中的导航横过来*/
+   line-height: 50px;
+   margin-right: 30px;
+
+}
+nav  li a {
+   text-decoration: none;
+   line-height:50px;
+   display: inline-block; /* 上句代码的作用是将a的作用域拓宽到一整个‘方块’ */
+   color:white;
+  margin-left:40.27%;
+   margin-right:39.5%;
+}
+nav ul li.logo{ /*这里的li和.logo之间没有空格 */
+    float: left;/*使logo和导航各在一边，所以使用浮动*/
+    margin-left: 30px;
+}
+nav  li:hover{
+    background:#985966;
+}
+#banner .inner{
+    max-width:700px;
+    text-align: center;
+    margin:0 auto;/* 左右为0 上下自动 这就可以做成居中的效果*/
+    position: relative;
+    top: 160px;/* 这里嵌套的并不是k盒子模型*/
+}
+h1{ /*这里的却又有空格，也许是因为标签选择器后面直接写.,id要空格？*/
+    margin: 0;
+}
+button{/* 论一个简单的扁平化按钮的产生*/
+    border:none;
+    background: #985966;
+    opacity: 0.8;
+    color:#eee;
+}
+button a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
+}
+button:hover{
+	 opacity: 1;
+}
+#banner button{
+    padding: 14px 60px;
+}
+#banner .inner .more{
+    margin-top:150px;/* 这里嵌套的是盒子模型*/
+}
+.sub-heading {
+    line-height: 50px;
+    margin-top:20px;
+    display: block;
+    font-weight:700 ;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left:20px;
+}
+.logo a{
+    color:white;
+}
+nav ul{
+    float:right;
+}
+.wrapper{
+    width:1080px;
+    margin:0 auto;
+
+}
+.green-section{
+    text-align:center;
+    background:#6FBCE4;
+    color:white;
+    padding:100px 0;
+}
+h2{
+    margin:0;
+    font-size:30px;
+    padding:20px 0;
+}
+h3{
+    font-size: 24px;
+}
+.hr{
+    width:100%;
+    height:2px;
+    margin:0px auto;
+}
+.green-section .hr{
+    background: #078494;
+    width:50%;
+}
+.sub-heading{
+    font-size: 18px;
+}
+.green-section .icon-group .icon{
+    display: inline-block;
+    height:80px;
+    width:80px;
+    
+    transform: rotate(45deg);
+    margin:20px;
+}
+.icon-group{
+    margin:60px;
+}
+.gray-section .article-section .img-section{
+    width:45%;
+}
+.gray-section .article-section .img-section img{
+    width:100%;
+}
+.gray-section .article-section .text-section{
+    width:55%;
+    top:100px;
+    position: relative;
+}
+.gray-section {
+    background: #30363D;
+    color:white;
+}
+.article-section >div{
+    float:left;
+}
+.article-section{
+    overflow: auto;
+    font-size: 0;
+}
+.text-section h2{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.text-section p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+.text-section .sub-heading{
+    font-size:22px;
+    margin-left: 50px;
+}
+.article-section:nth-child(odd){
+    background-color:rgba(255,255,255,0.05);
+}
+.purple-section{
+    background: #26224A;
+    color:#ffffff;
+    padding:80px
+}
+.purple-section .heading-wrapper{
+    text-align: center;
+}
+.purple-section .hr{
+    background-color: mediumpurple;
+    width:50%;
+}
+.card{
+    float:left;
+    width:40%;
+    max-height:300px;
+    padding:50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+
+
+}
+ p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.card-group{
+    width:90%;
+    margin-left: 150px;
+    margin-top:50px;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.card:first-child{
+    background-color: rgba(0,0,0,0.05);
+}
+.card:nth-child(2){
+    background-color: rgba(0,0,0,0.09);
+}
+.card:nth-child(3){
+    background-color: rgba(0,0,0,0.13);
+}
+.card:nth-child(4){
+    background-color: rgba(0,0,0,0.17);
+}
+.card:nth-child(5){
+    background-color: rgba(0,0,0,0.21);
+}
+.card:nth-child(6){
+    background-color: rgba(0,0,0,0.25);
+}
+ul{
+    margin:0;
+}
+footer{
+    background: #333;
+    color:#fff
+    min-height:200px;
+    text-align: center;
+}
+.share-group{
+    display:block;
+    width:1080px;
+    margin:0 auto;
+    padding:30px
+}
+.share-group li{
+    display: inline-block;
+    padding:10px;
+}
+.copy{
+    padding-bottom: 10px;
+}
+.main-wrapper{
+    background: #eee url("../img/banner2.jpg");
+    background-attachment: fixed;/*这样这张图片就不能移动*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
